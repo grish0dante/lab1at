@@ -17,7 +17,7 @@ describe('Matrix operations', function () {
   });
 
   it('should multiply two matrices correctly', () => {
-    const result = A.rightMul(B); // або: const result = B.leftMul(A);
+    const result = A.rightMul(B);
     console.log('\n=== A · B ===');
     console.table(result);
     expect(result).to.deep.equal([[4, 4], [10, 8]]);
